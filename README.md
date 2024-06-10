@@ -32,14 +32,14 @@ $ go run .
 #### /api/v1/tasks/:id
 
 - `GET` : Get a task
-- `PUT` : Update a task
+- `PATCH` : Update a task
 - `DELETE` : Delete a task
 
 ### Post Params
 
 ```
 {
-	"name": "John Doe", // Required
+    "name": "John Doe", // Required
 }
 ```
 
