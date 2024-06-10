@@ -11,10 +11,7 @@ This is a simple API project to hone my golang skills using Gin web framework an
 # Navigate to task-manager-be
 $ cd task-manager-be
 
-# Download all necessary packages
-$ go get
-
-# Start server
+# Start server (dependencies will be downloaded and built automatically)
 $ go run .
 ```
 
