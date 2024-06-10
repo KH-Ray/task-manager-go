@@ -62,7 +62,7 @@ func DeleteBook(c *gin.Context) {
     var task models.Task
 
     if err := db.DB.Where("id = ?", c.Param("id")).First(&task).Error; err != nil {
-        c.JSON(http.StatusBadRequest, gin.H{"error": "Task not found"})
+        c.JSON(http.StatusBadRequest, gin.H{"error": "Task not found!"})
         return
     }
 

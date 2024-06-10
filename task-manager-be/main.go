@@ -14,7 +14,7 @@ func main() {
 
     db.ConnectDB()
 
-    v1 := r.Group("/api/v1") 
+    v1 := r.Group("/api/v1")
     v1.GET("/tasks", controllers.FindTasks)
     v1.GET("/tasks/:id", controllers.FindTask)
     v1.POST("/tasks", controllers.CreateTask)
